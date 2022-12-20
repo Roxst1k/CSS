@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: all .1s ease-in;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper {
+    width: 793px;
+    height: 507px;
+    background-color: #3B3F45;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    width: 793px;
+    height: 82px;
+    background-color: #4A4F56;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header h1 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17em;
+    color: #FF8984;
+    margin-top: 19px;
+}
+
+.header p{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18em;
+    color: #FF8984;
+    margin-top: 4px;
+}
+
+.section {
+    margin-top: 20px;
+}
+
+.point {
+    width: 534px;
+    height: 45px;
+    background-color: #88839E;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+[name="checklist"] {
+    width: 19px;
+    height: 19px;
+    margin: 12px 16px 14px 12px;
+}
+
+label{
+    width: 98%;
+    height: 98%;
+    /*padding-top: 1px;*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 3px;
+}
+
+span {
+    /*margin-left: 10px;*/
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+}
+
+span::before {
+    content: '(';
+}
+
+span::after {
+    content: ')';
+}
+
+.honest {
+    background-color: #9B96AC;
+}
+
+.point:hover {
+    background-color: #625E77;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+}
+
+.point:active {
+    background-color: #FF8984;
+}
+
+:checked + label {
+    text-decoration: line-through;
+    color: darkgrey;
+    filter: drop-shadow(10px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.button {
+    width: 534px;
+    height: 45px;
+    margin-top: 45px;
+    background: #4A4F56;
+    color: #FF8984;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67em;
+}
+
